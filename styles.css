@@ -102,6 +102,11 @@ nav a {
     padding-bottom: 4px;
     transition: color .2s ease;
 }
+/* Active navigation link – adjusts automatically for light & dark themes */
+nav a.active {
+    color: var(--text-main) !important;
+}
+
 nav a::after {
     content: "";
     position: absolute;
