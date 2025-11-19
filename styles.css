@@ -597,3 +597,53 @@ body.light footer {
   border-top: 1px solid var(--border-subtle);
   color: var(--text-muted);
 }
+/* Card hover glow */
+.card, .project-card {
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.card:hover, .project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 22px 45px rgba(56, 189, 248, 0.35);
+    border-color: var(--accent);
+}
+/* Button lift effect */
+button, .btn-primary, .btn-ghost {
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+button:hover, .btn-primary:hover, .btn-ghost:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.18);
+}
+/* Skill pills hover */
+.pill {
+    transition: background .2s ease, transform .2s ease, box-shadow .2s ease;
+}
+
+.pill:hover {
+    background: var(--accent-soft);
+    box-shadow: 0 8px 18px rgba(56, 189, 248, 0.25);
+    transform: translateY(-2px);
+    border-color: var(--accent);
+}
+/* Animated underline nav links */
+nav a {
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0%;
+    height: 2px;
+    background: var(--accent-strong);
+    transition: width .25s ease;
+}
+
+nav a:hover::after,
+nav a.active::after {
+    width: 100%;
+}
