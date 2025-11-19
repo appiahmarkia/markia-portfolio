@@ -508,6 +508,29 @@ body.light .skill-pill {
 /* ========================= */
 /* Light Mode Visual Overrides */
 /* ========================= */
+/* Buttons in light mode */
+body.light .btn-primary {
+  background: radial-gradient(circle at top left, #0ea5e9, #38bdf8);
+  color: #0b1120;
+  box-shadow: 0 10px 28px rgba(148, 163, 184, 0.6);
+}
+
+body.light .btn-ghost {
+  background: #e5e7eb;
+  border-color: var(--border-subtle);
+  color: var(--text-main);
+}
+
+/* Skill pills / tags in light mode */
+body.light .pill {
+  background: #f9fafb;
+  border-color: var(--border-subtle);
+  color: var(--text-main);
+}
+
+body.light .pill a {
+  color: inherit;
+}
 
 body.light {
   background: radial-gradient(circle at top, #e5e7eb 0, #f4f4f5 45%, #e5e7eb 100%);
