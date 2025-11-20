@@ -678,3 +678,21 @@ nav a.active::after {
   border-color: var(--accent);
   transform: translateY(-3px);
 }
+/* Mobile tap animation for hero tags */
+.hero-tags .tag:active {
+  transform: scale(0.92); /* slight shrink on tap */
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+  transition: transform 0.12s ease-out, box-shadow 0.2s ease-out;
+}
+
+/* Add a subtle release bounce for mobile */
+@media (hover: none) {
+  .hero-tags .tag {
+    transition: transform 0.15s ease-out;
+  }
+  .hero-tags .tag:active {
+    transform: scale(0.94);
+  }
+}
