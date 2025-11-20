@@ -696,3 +696,40 @@ nav a.active::after {
     transform: scale(0.94);
   }
 }
+/* ========================= */
+/* Mobile Typography Fixes   */
+/* ========================= */
+
+@media (max-width: 640px) {
+
+  body {
+    font-size: 17px;               /* bigger base text */
+    line-height: 1.6;
+  }
+
+  h1, .hero-title {
+    font-size: 30px;               /* fix huge shrink on mobile */
+    line-height: 1.25;
+  }
+
+  h2 {
+    font-size: 24px;               /* headings readable */
+    margin-bottom: 16px;
+  }
+
+  p,
+  .lead {
+    font-size: 17px;               /* main paragraphs readable */
+    line-height: 1.65;
+  }
+
+  .pill-row .pill,
+  .hero-tags .tag {
+    font-size: 15px;               /* tags look balanced on mobile */
+    padding: 8px 12px;
+  }
+
+  nav ul li a {
+    font-size: 16px;               /* menu readable */
+  }
+}
