@@ -660,3 +660,21 @@ nav a.active::after {
     gap: 16px;
   }
 }
+/* Glow hover for hero tags */
+.hero-tags .tag {
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: color .25s ease, background .25s ease, box-shadow .25s ease,
+              transform .25s ease, border-color .25s ease;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+/* Hover animation */
+.hero-tags .tag:hover {
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+  box-shadow: 0 0 18px rgba(56, 189, 248, 0.35);
+  border-color: var(--accent);
+  transform: translateY(-3px);
+}
