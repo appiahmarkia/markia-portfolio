@@ -647,3 +647,16 @@ nav a:hover::after,
 nav a.active::after {
     width: 100%;
 }
+.hero-actions {
+  margin-top: 32px;     /* spacing above buttons */
+  display: flex;
+  flex-direction: column;
+  gap: 12px;            /* spacing between buttons */
+}
+
+@media (min-width: 640px) {
+  .hero-actions {
+    flex-direction: row;   /* buttons in a row on desktop */
+    gap: 16px;
+  }
+}
