@@ -854,3 +854,30 @@ nav a.active::after {
     font-size: 1.3rem;
   }
 }
+/* UX / UI section heading */
+.block h2 {
+  font-size: 2.1rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+  color: #1f1f26;
+}
+
+/* Optional: add a subtle divider under the heading */
+.block h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin-top: 0.4rem;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #ff8fb3, #ffb347);
+}
+@media (max-width: 600px) {
+  .block h2 {
+    font-size: 1.7rem;
+    letter-spacing: 0.06em;
+    text-align: left; /* or center if your layout is centered */
+  }
+}
