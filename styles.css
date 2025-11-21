@@ -807,16 +807,20 @@ body.light footer {
   position: relative;
 }
 
+/* Stronger overlay to hide the old baked-in text */
 .thumb-overlay {
   position: absolute;
-  inset: 10px 10px auto 10px;
-  padding: 8px 10px;
-  background: rgba(0, 0, 0, 0.55);
-  border-radius: 8px;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 14px;
+  background: rgba(0, 0, 0, 0.9); /* almost solid so old text doesn't show */
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 3px;
+  border-bottom-right-radius: 10px;
 }
+
 
 .thumb-title {
   font-size: 0.95rem;
