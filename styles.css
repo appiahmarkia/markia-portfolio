@@ -733,3 +733,22 @@ nav a.active::after {
     font-size: 16px;               /* menu readable */
   }
 }
+/* Fix tiny text in UX/UI card section */
+.card-meta,
+.card-title {
+    font-size: 1.15rem !important;
+    line-height: 1.4;
+}
+
+/* Improve readability on mobile */
+@media (max-width: 600px) {
+    .card-meta,
+    .card-title {
+        font-size: 1.3rem !important;
+    }
+}
+
+/* Optional: make titles stand out more */
+.card-title {
+    font-weight: 600;
+}
