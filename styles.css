@@ -752,3 +752,105 @@ nav a.active::after {
 .card-title {
     font-weight: 600;
 }
+/* UX / UI gallery layout */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.75rem;
+  align-items: stretch;
+  margin-top: 2rem;
+}
+
+/* Individual project card */
+.card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 1.25rem 1.35rem 1.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border 0.18s ease;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+/* Hover effect */
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.09);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+/* Thumbnail container */
+.card-thumb {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Thumbnail image */
+.card-thumb img {
+  width: 100%;
+  display: block;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+/* Slight zoom on hover */
+.card:hover .card-thumb img {
+  transform: scale(1.03);
+  filter: saturate(1.05);
+}
+/* Small label above title: e.g., "Events", "School Experience" */
+.card-meta {
+  font-size: 0.9rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #7b7b8a;
+}
+
+/* Project title under the image */
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1f1f26;
+  line-height: 1.35;
+}
+
+/* Optional description text inside the card, if you're using <p> */
+.card p {
+  margin: 0.25rem 0 0;
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: #49495a;
+}
+@media (max-width: 768px) {
+  .card {
+    padding: 1rem 1.1rem 1.25rem;
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+  }
+
+  .card-meta {
+    font-size: 0.95rem;
+  }
+
+  .card p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-grid {
+    gap: 1.25rem;
+  }
+
+  .card {
+    padding: 0.95rem 1rem 1.15rem;
+  }
+
+  .card-title {
+    font-size: 1.3rem;
+  }
+}
