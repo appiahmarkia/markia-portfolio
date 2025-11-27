@@ -581,6 +581,23 @@ footer {
 body.light .skill-pill {
   background: #ffffff;
 }
+/* Glow hover effect */
+.skill-pill {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.skill-pill:hover {
+  transform: translateY(-3px) scale(1.02);
+  border-color: var(--accent);
+  box-shadow:
+    0 0 14px var(--accent-soft),
+    0 0 28px var(--accent),
+    0 10px 26px rgba(0, 0, 0, 0.45);
+}
+
 
 /* Testimonials */
 .testimonials-grid {
